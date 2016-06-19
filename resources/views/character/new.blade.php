@@ -28,19 +28,25 @@
                             </div>
                         </div>
                         <h3>Characteristics</h3>
-                        <button id="roll_char" class="btn btn-primary-outline">Roll Characteristic</button>
+                        <button id="roll_char" class="btn btn-primary">Roll</button>
                         <ul id='roll_values'>
                         </ul>
-                        <table class='table' style='max-width: 25%'>
+                        <table class='table'>
                             <thead>
                                 <th style='text-align: right'>Name</th>
+                                <th>Roll</th>
+                                <th>Roll</th>
+                                <th>Base</th>
                                 <th>Value</th>
                                 <th>Bonus</th>
                             </thead>
                             <tbody>
                             <tr>
                                 <td style='text-align: right; font-weight: bold'>Weapon Skill</td>
-                                <td style='text-align: center;'><input type="number" name="WS" value="{{ old("WS") }}" min="1" max="20" step="1" /></td>
+                                <td style='text-align: center;'><input type="number" class="roll" data-roll-target="WS" name="roll" value="" min="1" max="10" step="1" /></td>
+                                <td style='text-align: center;'><input type="number" class="roll" data-roll-target="WS" name="roll" value="" min="1" max="10" step="1" /></td>
+                                <td style='text-align: center;'><input type="number" class="base" data-roll-target="WS" name="base" value="" min="1" max="100" step="1" /></td>
+                                <td style='text-align: center;'><input type="number" id="WS" name="WS" value="{{ old("WS") }}" min="1" max="100" step="1" /></td>
                                 <td style='text-align: center;'>0</td>
                             </tr>
                             <tbody>

@@ -10,7 +10,7 @@
                 <div class="panel-body">
                     <nav class="list-group">
                     @foreach ($characters as $character)
-                        <a class="list-group-item" href='/character/{{ $character->id }}'>{{ $character->name }}</a>
+                        <a class="list-group-item" href='/character/{{ $character->name }}'>{{ $character->name }}</a>
                     @endforeach
                     </nav>
                     <a href="/character/new" class="btn btn-primary">New Character</a>

@@ -7,10 +7,10 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     {{ $character->user->name }} 
-                    <a class='label label-pill label-primary pull-right' href='/character/{{ $character->id }}/edit'>Edit</a>
+                    <a class='label label-pill label-primary pull-right' href='/character/{{ $character->name }}/edit'>Edit</a>
                 </div>
                 <div class="panel-body">
-                    <form action='/character/{{ $character->id }}/edit' method='post'>
+                    <form action='/character/{{ $character->name }}/edit' method='post'>
                         {{ csrf_field() }}
                         {{ method_field('PATCH') }}
                         <h3><strong>Name:<strong> <input type="text" name="name" value="{{ $character->name }}" /></h3>

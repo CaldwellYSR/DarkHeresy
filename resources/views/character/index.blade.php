@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     {{ $character->user->name }} 
-                    <a class='label label-pill label-primary pull-right' href='/character/{{ $character->id }}/edit'>Edit</a>
+                    <a class='label label-pill label-primary pull-right' href='/character/{{ $character->name }}/edit'>Edit</a>
                 </div>
                 <div class="panel-body">
                     <h3><strong>Name:</strong> {{ $character->name }}</h3>
